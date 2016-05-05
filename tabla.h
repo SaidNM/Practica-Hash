@@ -27,7 +27,7 @@
     };
 
 
-    int clasificar_palabra(FILE *);
+    int clasificar_palabra (FILE *);
     int funcion_hash(int);
     void inicializar_palabra(struct Palabra *);
     void insertar_letra(struct Palabra *, char);
