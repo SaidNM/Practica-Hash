@@ -1,20 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include "tabla.h"
 
 
 
-int main() {
+int main(int argc, char const *argv[]) {
 
-    FILE * documento = NULL;
+    FILE *documento = NULL;
+	int error = 0;
 
-	archivo = fopen("texto.txt", "r");
+	documento = fopen("texto.txt", "r");
 	if (documento == NULL) {
 		printf("Documento vacio\n");
 		return 0;
 	}
-    clasificar_palabra(documento);
+
+    clasificar(documento);
     getch();
     return 0;
 }
